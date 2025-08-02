@@ -1,0 +1,26 @@
+<ol> Ordered List
+- 순서가 있는 목록을 표현할 때 사용
+- type 속성으로 글머리 기호를 변경할 수 있음
+
+<ul> Unordered Lists
+- 순서가 없는 목록을 표현할 때 사용
+
+<li> Listed item
+- 목록 하위 항목으로 사용
+- <ul> 또는 <ol> 태크의 하위에 위치
+
+<dl> Definition List
+- 사전처럼 용어를 설명하는 목록을 만듬
+
+<dt> Definition Term
+- 정의되는 용어의 제목을 넣을 때 사용
+
+<dd> Definition Description
+- 용어를 설명하는데 사용
+
+* 주의사항
+1) <dl>태그는 하나 이상의 <dt>~<dd>쌍의 태그를 갖고 있어야 함
+   단, <dt>~<dd>태그가 반드시 하나의 짝으로 지어져야하는 것은 아님
+
+2) <li>, <dt>~<dd> 태그는 밖에서 독립적으로 사용할 수 없음
+3) <ul> 태그 하위요소로는 <li>태그가 위치해야함

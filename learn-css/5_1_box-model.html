@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      /*
+        Content, Padding, Margin, Border
+        */
+      div.contents {
+        background-color: rgb(211, 211, 211);
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 10px solid green;
+        margin: 40px;
+      }
+      span {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+      }
+      div.padding {
+        border: 1px solid black;
+        padding: 20px 10px;
+      }
+      div.margin {
+        border: 1px solid red;
+        margin: 20px 10px;
+      }
+      div.shape {
+        border: 1px solid blue;
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contents"></div>
+    <span>Hello CSS</span>
+    <div class="padding">
+      재료가 사기적인 감칠맛 덩어리인 김치라 요리 실력이 조금만 받쳐준다면 낼 수
+      있는 맛의 저점이 높지만, 들어가는 재료가 한정적이라 특색있게 만들기는
+      의외로 어려운 요리이다. 그래도 쉬운 요리인 것은 변함이 없고 우리는 먹을
+      만한 김치볶음밥을 원하는 거지 엄청나게 맛있는 김치볶음밥을 원하는 게
+      아니기 때문에 자취생부터 가정주부까지 두루두루 만들어 먹는 음식이다.
+      아래는 대강의 조리법이다. 김치를 잘 먹지 않는 사람도 이 김치볶음밥 만큼은
+      매우 잘 먹는 경우가 많다. 볶음김치의 고소함과 밥의 고슬고슬함, 부가재료의
+      맛 첨가로 밥도둑의 역할을 충분히 하기 때문이다.
+    </div>
+    <div class="margin">
+      재료가 사기적인 감칠맛 덩어리인 김치라 요리 실력이 조금만 받쳐준다면 낼 수
+      있는 맛의 저점이 높지만, 들어가는 재료가 한정적이라 특색있게 만들기는
+      의외로 어려운 요리이다. 그래도 쉬운 요리인 것은 변함이 없고 우리는 먹을
+      만한 김치볶음밥을 원하는 거지 엄청나게 맛있는 김치볶음밥을 원하는 게
+      아니기 때문에 자취생부터 가정주부까지 두루두루 만들어 먹는 음식이다.
+      아래는 대강의 조리법이다. 김치를 잘 먹지 않는 사람도 이 김치볶음밥 만큼은
+      매우 잘 먹는 경우가 많다. 볶음김치의 고소함과 밥의 고슬고슬함, 부가재료의
+      맛 첨가로 밥도둑의 역할을 충분히 하기 때문이다.
+    </div>
+    <div class="shape" style="margin-bottom: 40px"></div>
+    <div class="shape"></div>
+  </body>
+</html>
