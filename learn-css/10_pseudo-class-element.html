@@ -39,6 +39,38 @@
       li:not(.target) {
         font-size: 30px;
       }
+      /* 가상 요소 */
+      .required::before {
+        content: "*";
+        margin-right: 2px;
+        color: red;
+        font-size: 18px;
+      }
+      [data-tooltip] {
+        position: relative;
+      }
+      [data-tooltip]:hover::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        top: 0px;
+        left: 56px;
+        background-color: black;
+        color: white;
+        width: 200px;
+      }
+      .letter::first-letter {
+        font-size: 60px;
+        color: blue;
+      }
+      .classline::first-line {
+        background-color: yellow;
+        color: blue;
+        font-size: 20px;
+      }
+      p::selection {
+        background-color: red;
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -52,14 +84,14 @@
     <fieldset>
       <legend>focus, before, after</legend>
       <div class="field">
-        <label for="name">이름</label>
+        <label class="required" for="name">이름</label>
         <input type="text" id="name" />
       </div>
       <div class="field">
-        <label for="age">나이</label>
+        <label class="required" for="age">나이</label>
         <input type="text" id="age" />
       </div>
-      <button>보내기</button>
+      <button data-tooltip="이버튼을 클릭하여 정보를 보내세요!">보내기</button>
     </fieldset>
 
     <fieldset>
@@ -71,6 +103,24 @@
         <li>4contents</li>
         <li>5contents</li>
       </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>first-letter, first-line, section</legend>
+      <div>
+        <p class="letter">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus
+          dolor eligendi consequuntur aspernatur mollitia error tempora,
+          perspiciatis adipisci consequatur asperiores distinctio, nesciunt quae
+          eos architecto porro cupiditate, earum saepe?
+        </p>
+        <p class="classline">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta
+          ab laboriosam quos. Ducimus laborum accusamus atque placeat facilis,
+          expedita qui vel perferendis suscipit aperiam ea, quia velit corporis
+          voluptate.
+        </p>
+      </div>
     </fieldset>
   </body>
 </html>
