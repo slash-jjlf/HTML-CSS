@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class&Element</title>
+    <style>
+      a {
+        font-size: 30px;
+      }
+      a:link {
+        color: cyan;
+      }
+      a:visited {
+        color: red;
+      }
+      a:hover {
+        color: blue;
+        font-weight: 900;
+      }
+      fieldset:hover {
+        background-color: lightgrey;
+        box-shadow: 0 0 20px grey;
+      }
+      a:active {
+        color: yellow;
+      }
+      input:focus {
+        outline: none;
+        border: 3px solid red;
+        box-shadow: 0 0 20px rgb(234, 162, 162);
+      }
+      .field {
+        margin-bottom: 10px;
+      }
+      li:nth-child(odd) {
+        background-color: yellow;
+      }
+      li:not(.target) {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Pseudo Class</legend>
+      <div>
+        <a href="https://naver.com">네이버</a>
+        <a href="https://kakao.com">카카오</a>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>focus, before, after</legend>
+      <div class="field">
+        <label for="name">이름</label>
+        <input type="text" id="name" />
+      </div>
+      <div class="field">
+        <label for="age">나이</label>
+        <input type="text" id="age" />
+      </div>
+      <button>보내기</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>nth-child, not</legend>
+      <ul>
+        <li class="target">1contents</li>
+        <li>2contents</li>
+        <li>3contents</li>
+        <li>4contents</li>
+        <li>5contents</li>
+      </ul>
+    </fieldset>
+  </body>
+</html>
